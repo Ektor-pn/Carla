@@ -22,6 +22,9 @@
             transition: transform 0.3s;
             --color: #ef233c;
             transition: background 0.3s;
+            outline: none; /* Elimina el borde azul */
+    user-select: none; /* Evita selección de texto accidental */
+    -webkit-tap-highlight-color: transparent; /* Quita el resaltado en móviles */
         }
         .heart::before,
         .heart::after {
@@ -116,8 +119,14 @@
             position: absolute;
             color: white;
             font-size: 50px;
+        }
+        #carla{
             top: 37%;
             left: 29%;
+        }
+        #tm{
+            top: 7%;
+            left: 14%;
         }
     </style>
 </head>
@@ -125,9 +134,9 @@
     <div class="heart" id="cora">
         <div id="contador">5</div>
     </div>
-    <div id="bloqueador" style="display: none;">
-        <div id="final">
-        <p>CARLA</p>
+    <div id="bloqueador" style="display: block;">
+        <p id="tm">TE QUIERO <br> UN MILLON</p>
+        <p id="carla">CARLA</p>
         <img class="fotos" src="6.png" id="sis">
         <img class="fotos" src="3.png" id="tres">
         <img class="fotos" src="1.png" id="u">
